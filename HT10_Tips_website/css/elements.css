@@ -1,9 +1,4 @@
 
-main {
-    display: flex;
-    flex-grow: 1;
-}
-
 .block-header {
     font: bold 36px/42px Helvetica, sans-serif;
     padding: 24px 48px;
