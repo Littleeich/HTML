@@ -1,0 +1,85 @@
+.chevron {
+    background: #000000;
+    border: 2px solid #000000;
+    margin: 0 0 50px;
+    font: 32px/37px Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .chevron-list {
+    text-align: right;
+    padding: 0 60px;
+    margin: 0;
+  }
+  
+  .chevron-item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 21px;
+  }
+  
+  .chevron-item a {
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 30px 25px 29px;
+    display: inline-block;
+  }
+  
+  .chevron-item a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 48px 0 48px 25px;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    top: 0;
+    left: 100% ;
+  }
+  
+  .chevron-item a:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 48px 0 48px 25px;
+    border-color: #ffffff #ffffff #ffffff transparent;
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+  
+  .gradient {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+    border: 2px solid transparent;
+    border-left: #ffffff;
+    border-right: #C4C4C4;
+  }
+  
+  .chevron-item a:hover {
+    background: #cccccc;
+  }
+  
+  .chevron-item a:hover:after {
+    border-color: transparent transparent transparent #cccccc;
+  }
+  
+  .chevron-item a:hover:before {
+    border-color: #cccccc #cccccc #cccccc transparent;
+  }
+  
+  .gradient .chevron-item a:hover { 
+    background: rgba(255, 255, 255, 0.7); 
+  }
+  
+  .gradient .chevron-item a:hover:after {
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+  }
+  
+  .gradient .chevron-item a:hover:before {
+    border-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) transparent;
+  }

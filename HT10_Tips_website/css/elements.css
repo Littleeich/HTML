@@ -1,0 +1,89 @@
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.block-header {
+    font: bold 36px/42px Helvetica, sans-serif;
+    padding: 24px 48px;
+    display: block;
+    text-transform: capitalize;
+    border-bottom: 1px solid #131320;
+}
+
+.sticker {
+    font: 16px/21px Helvetica, Arial, sans-serif;
+}
+
+.sticker.info {
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    padding: 0 24px;
+}
+
+.sticker.purple-bg {
+    margin: 24px 0;
+}
+
+.sticker.white-bg {
+    padding: 48px;
+    color: #7d868e;
+}
+
+.sub-block-header {
+    font: bold 24px/32px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #131320;
+    padding: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 63px;
+    padding: 24px 0;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 18px 0 21px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 42px;
+    padding: 0 0 21px;
+}
+
+h4, h5, h6 {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0 0 21px;
+}
+
+.sticker-wrapper {
+    padding: 16px;
+    border: 1px solid #4f58b2;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.wrapper-name {
+    position: absolute;
+    margin: -25px 0 0 20px;
+    padding: 0 5px;
+    background-color: aqua;
+    color: #ba1cda;
+    font: 12px/21px Helvetica, sans-serif;
+    text-transform: uppercase;
+}

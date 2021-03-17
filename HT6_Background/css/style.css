@@ -1,0 +1,10 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background: 
+	url(../img/grass.png) bottom/auto 150px repeat-x,
+	url(../img/deer.png) bottom 0px center/auto 500px no-repeat,
+	url(../img/cloud.png) top 50px right -50%/auto 200px repeat-x,
+	url(../img/sun.png) top 0px right no-repeat,
+	#f5fcff;
+}

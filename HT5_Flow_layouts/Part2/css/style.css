@@ -1,0 +1,52 @@
+.box-wrapper {
+  border: 2px solid #C4C4C4;
+  text-align: right;
+  margin: 0 0 50px;
+}
+
+.rectangle {
+  background: #C4C4C4;
+  height: 100px;
+  width: 300px;
+  margin: 50px 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1000px;
+}
+
+.inlined {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.containerL {
+  text-align: left;
+}
+
+.containerR {
+  text-align: right;
+}
+
+.big-box {
+  background: #C4C4C4;
+  height: 400px;
+  width: 700px;
+  margin: 0 0 90px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-family: Arial;
+  margin: 0 0 130px 0;
+}

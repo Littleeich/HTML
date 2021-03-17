@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>My tips page</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/elements.css">
+        <link rel="stylesheet" href="css/chevron.css">
+	</head>
+  <body>
+	<header>
+		<div class="logo"><a href="index.html">My tips</a></div>
+		<ul class="nav">
+			<li><a href="elements.html">elements</a></li>
+			<li><a href="components.html">components</a></li>
+			<li><a href="">layouts</a></li>
+			<li><a href="">drafts</a></li>
+			<li><a href="">documentation</a></li>
+		</ul>
+	</header>
+	<main>
+		<ul class="sidebar">
+				<li><a href="#">chevron menu</a></li>
+				<li><a href="#">dropdown menu</a></li>
+				<li><a href="#">modal box</a></li>
+				<li><a href="#">allerts</a></li>
+			</ul>
+		<div class="context">
+            <h1 class="block-header" id="typography">Chevron menu</h1>
+			<div class="context-wrapper">
+				<div class= "sticker purple-bg info">
+					<img src="img/info.svg" alt="!!!info!!!" class="info-img">
+					<div>
+						<p>Possible to use on gradient background</p>
+						<p>Easy to use opacity for items background</p>
+						<p>Cross-browser</p>
+					</div>
+				</div>
+
+                <nav class="chevron gradient">
+                    <ul class="chevron-list">
+                      <li class="chevron-item"><a href="#">about</a></li>
+                      <li class="chevron-item"><a href="#">careers</a></li>
+                      <li class="chevron-item"><a href="#">faq</a></li>
+                      <li class="chevron-item"><a href="#">contact</a></li>
+                    </ul>
+                  </nav>
+
+                <div class="sticker-wrapper">
+					<span class="wrapper-name">html</span>
+					<div class= "sticker white-bg">
+                        <pre>
+&lt;ul class=&rdquo;list&rdquo;&gt;
+    &lt;li&gt;&lt;a href=&rdquo;#&rdquo;&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&rdquo;#&rdquo;&gt;Careers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&rdquo;#&rdquo;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&rdquo;#&rdquo;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="sticker-wrapper">
+					<span class="wrapper-name">css</span>
+					<div class= "sticker white-bg">
+<pre>
+    div.menu-body-gradient  {
+        height: 96px;
+        padding: 2px 0;
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+    }
+    ul.list-gr {
+        margin:0;
+        padding: 0 60px;
+        text-align: right;
+    }
+    ul.list-gr li {
+        display: inline-block;
+        position: relative;
+        padding: 30px 25px 29px 25px;
+        margin: 0 20px 0 25px;
+        background-color: #ffffff;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    ul.list-gr li:hover {
+        opacity: 0.7;
+    }
+    ul.list-gr li::after {
+        position: absolute;
+        top:0;
+        left: 100%;
+     content: "";
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 48px 0 48px 25px;
+     border-color: transparent transparent transparent #ffffff;
+    }
+    ul.list-gr li > a {
+        vertical-align: top;
+        text-decoration: none;
+        color: #000000;
+    }
+    ul.list-gr li > a::after {
+        position: absolute;
+        left: -25px;
+        top: 0px;
+     content: "";
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 0 25px 48px 0;
+     border-color: transparent #ffffff transparent transparent;
+    }
+    ul.list-gr li > a::before {
+        position: absolute;
+        left: -25px;
+        top: 48px;
+     content: "";
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 0 0 48px 25px;
+     border-color: transparent transparent #ffffff transparent;
+    }
+</pre>
+                    </div>
+                </div>
+        </div>
+    </main>
+    </body>
+</html>

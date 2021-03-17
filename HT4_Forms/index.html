@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<form class="myform" action="" method="">
+			<h2 class="title">Please fill out the form below</h2>
+				<label for="fname" class="label">Full name</label>
+				<input type="text" id="fname" name="fname" class="field">
+				<label for="email" class="label">Your e-mail address</label>
+				<input type="email" id="email" name="email" class="field">
+				<label for="phone-number" class="label">Your phone number</label>
+				<input type="tel" id="phone-number" name="phone-number" class="field">
+				<label for="country" class="label">Select your country</label>
+				<select id="country" name="country" class="selectbox field">
+					<option value="UK" selected>UK</option>
+					<option value="UA">UA</option>
+					<option value="BR">BR</option>
+				</select>
+			<span class="radio-legend">I want to attend event</span>
+			<div class="radio-div">
+				<input type="radio" id="online" name="line-status" value="online" checked="checked">
+				<label for="online">online</label>
+			</div>
+			<div class="radio-div">
+				<input type="radio" id="offline" name="line-status" value="offline">
+				<label for="offline">offline</label>
+			</div>
+				<label for="comments" class="label">Comments</label>
+				<textarea id="comments" name="comments" class="field"></textarea>
+			<div>
+				<input type="checkbox" id="privacy" name="privacy">
+				<label for="privacy">I agree with <a href="" class="privacy-link">the privacy policy</a></label>
+			</div>
+			<div id="buttons">
+				<input type="reset" value="Clear form" class="button">
+				<input type="submit" value="Submit form" class="button">
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+	background: no-repeat url(../img/dust2.jpg) center/cover;
+}
+
+header {
+	height: 250px;
+	background: no-repeat url(../img/cs_logo.png) center/contain,
+	rgba(255, 255, 255, 0.45);
+}
+
+.teamContainer {
+	display: flex;
+	flex-wrap: wrap;
+	background: rgba(255, 255, 255, 0.7)
+}
+
+.photo, .text {
+	flex: 1 1 400px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font: bold 16px/24px Arial, self-serif;
+	text-indent: 1.5em;
+	min-height: 400px;
+}
+
+.text * {
+	padding: 0px 40px 20px 40px;
+	text-align: justify;
+}
+
+.text .fanpage_link {
+	align-self: center;
+	text-align: center; /* for better view when we change the size of the screen */
+	font-size: 30px;
+	line-height: 36px;
+	text-decoration-color: rgb(165, 42, 202);
+	letter-spacing: 2px;
+	background: -webkit-linear-gradient(rgb(50, 121, 9), rgb(195, 0, 255));
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.text .fanpage_link:hover{
+	background: -webkit-linear-gradient(rgb(9, 121, 102), rgb(12, 206, 12));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.photo {
+	min-height: 400px;
+}
+
+.teamContainer:nth-of-type(2n) {
+	flex-direction: row-reverse;
+}
+
+.NaVi .photo{
+	background: no-repeat url(../img/NaVi_faces.jpg) center/contain;
+}
+
+.Astralis .photo{
+	background: no-repeat url(../img/astralis_faces.jpg) center/contain;
+}
+
+.VP .photo{
+	background: no-repeat url(../img/VP_faces.jpg) center/contain;
+}
+
+.NaVi .photo:hover{
+	background: no-repeat url(../img/NaVi.png) center/contain;
+}
+
+.Astralis .photo:hover{
+	background: no-repeat url(../img/Astralis.png) center/contain;
+}
+
+.VP .photo:hover{
+	background: no-repeat url(../img/VP.png) center/contain;
+}
+
+footer {
+	background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(222,219,209,1) 70%);
+	font: bold 22px/28px Arial;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 90px;
+}
+
+footer a {
+	margin: 5px 20px 0 0;
+	padding: 5px 10px;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 30px;
+}
+
+footer a:hover {
+	background: #d4c3b2;
+	color:  rgb(25, 186, 214);
+}
+
+footer a:active {
+	background: #7605a3;
+	color:  rgb(243, 220, 12);
+}
+
+footer a:visited {
+	background: rgb(31, 199, 70);
+	color:  rgb(228, 23, 118);
+}
+	

@@ -1,0 +1,76 @@
+.myform {
+  color: #000;
+  font-family: Arial;
+  font-size: 20px;
+}
+.title {
+  font-size: 32px;
+  font-weight: Normal;
+  margin: 48px 0;
+  padding: 0 2px
+}
+.label {
+  display: block;
+  padding: 0 4px;
+}
+.radio-legend {
+  font-size: 24px;
+  display: block;
+  padding: 0 0 14px 0;
+}
+.field {
+  width: 756px;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  border: 2px solid #808080;
+  font-size: 24px;
+  margin: 10px 0 36px 5px
+}
+.selectbox {
+  width: 800px;
+  height: 60px;
+  padding: 0 14px;
+}
+.privacy-link {
+  color: #25256e;
+  text-decoration: none;
+}
+
+#comments {
+  resize: none;
+  height: 96px;
+  margin: 14px 0 20px 0
+}
+
+input[type="reset"] {
+  background-color: #e6e6e6;
+  color: #808080
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #ffffff
+}
+
+.button {
+  width: 360px;
+  height: 75px;
+  border-radius: 8px;
+  border: 0 solid #808080;
+  font-size: 24px;
+  margin: 0px 76px 20px 0
+}
+
+.radio-div {
+  margin: 18px 0 0 0;
+}
+
+label[for="comments"] {
+  margin: 40px 0 0 0;
+}
+
+#buttons {
+  margin: 50px 0 0 0;
+}

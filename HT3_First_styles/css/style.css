@@ -1,0 +1,18 @@
+.articleData {
+	font-size: 22px;
+	color: #708090;
+}
+
+.articleData .loremHeader {
+	font-size: 32px;
+	color: #4169E1;
+}
+
+.specialParagraph {
+	background: #708090;
+	color: #FFFFFF;
+}
+
+.lmsLink {
+	color: #4169E1;
+}
