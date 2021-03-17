@@ -7,11 +7,10 @@ header {
   font-weight: bold;
   line-height: 32px;
   box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
-  /*
-  To make shadow visible always.
-  Without z-index we will not have shadow near the sidebar.
-  */
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
   z-index: 1;
 }
 
@@ -52,8 +51,6 @@ header {
 
 body {
   background-color: aqua;
-  display: flex;
-  flex-direction: column;
   color: #131320;
   min-height: 100vh;
 }
@@ -82,7 +79,9 @@ body {
 
 .sidebar {
   background-color: #6a75ca;
-  flex: 0 0 240px;
+  width: 240px;
+  position: fixed;
+  min-height: calc(100vh - 80px);
 }
 
 .sidebar a {
@@ -90,22 +89,38 @@ body {
   color: #eeeeee;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
 
 .sidebar li {
   margin: 20px 40px;
 }
 
-.sidebar li:hover {
-  color: #eeeeee;
-  list-style-type: disc;
-  list-style-position: inside;
+.sidebar a:hover::before {
+  content:"\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: #eeeeee;
+    display:inline-block;
+    position: absolute;
+    left: -20px;
+    top: 3px;
 }
 
 .context {
   flex-grow: 1;
+  padding-left: 240px;
 }
 
 .context-wrapper {
   padding: 0 48px;
+}
+
+.fixation-wrapper {
+  position: relative;
+}
+
+main {
+  padding-top: 80px;
 }
