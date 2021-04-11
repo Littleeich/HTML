@@ -1,0 +1,304 @@
+.global-wrapper {
+  background-color: #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  font: 20px/24px "Merriweather", serif;
+}
+
+.left-nav {
+  display: none;
+  flex-grow: 1;
+  background-color: #86C232;
+  padding: 320px 60px 100px 120px;
+  font: bold 28px/32px serif;
+}
+
+.left-nav.opened {
+  display: block;
+}
+
+.left-nav .nav {
+  margin-bottom: 20px;
+}
+
+.left-nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.social-nav {
+  position: absolute;
+  right: 20px;
+  top: calc((100% - 150px) / 2);
+}
+
+.social-nav li {
+  margin: 10px;
+  background-color: #86C232;
+  border-radius: 15px;
+  padding: 4px 4px 0 4px;
+}
+
+.social-nav img, .contacts img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-menu {
+  position: absolute;
+  top: calc((100% - 90px) / 2);
+  left: -24px;
+}
+
+.btn-close {
+  position: absolute;
+  top: calc((100% - 70px) / 2);
+  left: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  margin: 80px;
+  background-color: #FFFFFF;
+  flex-basis: calc(100vh - 160px);
+  display: flex;
+}
+
+.hello.wrapper {
+  background: 
+	url(../img/grass.png) bottom/auto 100px repeat-x,
+	url(../img/cloud.png) top 50px right -50%/auto 60px repeat-x,
+  url(../img/sun.png) top right/150px 160px no-repeat,
+	#f5fcff;
+}
+
+.hello-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 300px 120px;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.hello-content strong {
+  font-weight: bold;
+}
+
+.hello-content .note {
+  font-size: 14px;
+  line-height: 18px;
+  color: blue;
+}
+
+.about {
+  padding: 60px;
+  flex-direction: column;
+  font: 40px/50px "Dancing Script", serif;
+  justify-content: center;
+  text-align: justify;
+  text-indent: 2em;
+
+  background: linear-gradient(-45deg, rgba(51, 35, 192, 0.733), #aaaaaa, #bbbbbb, #2041d6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.skills {
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px;
+}
+
+.skills h1 {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.skills > p {
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  margin-top: 20px;
+}
+
+.skill-text {
+  text-transform: uppercase;
+}
+
+.skills-container .load-line {
+  height: 10px;
+  border-radius: 8px;
+  background-color: #86C232;
+}
+
+.skills-container .load-line.skill-growth {
+  background-color: #491192;
+  transition: background-color, width, 9s, easy;
+}
+
+.skills-container .skill-text {
+  flex: 200px 0 0;
+}
+
+.skills-container .load-line {
+  flex-grow: 1;
+}
+
+.html.load-line {
+  width: 40%;
+}
+
+.css.load-line {
+  width: 30%;
+}
+
+.responsive.load-line {
+  width: 10%;
+}
+
+.jquery.load-line {
+  width: 20%;
+}
+
+.teamwork.load-line {
+  width: 60%;
+}
+
+.flex.load-line {
+  width: 5%;
+}
+
+.html.load-line.skill-growth{
+  width: 70%;
+}
+
+.css.load-line.skill-growth{
+  width: 70%;
+}
+
+.responsive.load-line.skill-growth{
+  width: 50%;
+}
+
+.jquery.load-line.skill-growth{
+  width: 30%;
+}
+
+.teamwork.load-line.skill-growth{
+  width: 70%;
+}
+
+.flex.load-line.skill-growth{
+  width: 75%;
+}
+
+.contacts {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts * {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contacts h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contacts > p {
+  font-size: 30px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.contacts li {
+  margin-bottom: 15px;
+}
+
+.contact-github a {
+  transition-duration: 7s;
+}
+
+.contacts .contact-github:hover a {
+  display: block;
+  transform: translate(-100px, -100px);
+}
+
+.btn-menu:hover svg path, .btn-menu:hover svg use{
+  fill: #86C232;
+}
+
+.btn-close:hover svg path {
+  fill: #2041d6;
+}
+
+.left-nav .nav:hover {
+  background: -webkit-linear-gradient(#0D82CE, #F10BD9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-nav li:hover {
+  background-color: #AAAAAA;
+}
+
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  left: 120px;  
+  border: none; 
+  outline: none; 
+  background-color: rgb(103, 9, 253);
+  opacity: 0.2;
+  color: white; 
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transform: rotate(0.75turn)
+}
+
+.myBtn:hover {
+  background-color: #555;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
